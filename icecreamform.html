@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>DeliviceCream</title>
+    <style>
+    	body {
+ 		    margin: 30px;
+		}
+    </style>
+</head>
+
+<body>
+	<h1>Delivice Cream</h1>
+	<h2>Ice cream delivered directly to you anytime, anywhere!</h2>
+	<h3>Order Form:</h3>
+	<form name="some_server_code" action="order.php" method="post">
+		<fieldset>
+			<h2>General Information</h2>
+				<label  class="fix" for="first">First <u>N</u>ame <span>*</span>:</label> <input type="text" id="first" name="first_name" accesskey="N" autofocus required><br>
+				
+				
+				<label class="fix" for="last"><u>L</u>ast Name<span>*</span>:</label> <input type="text" id="last" name="last_name" accesskey="L" required><br>
+				
+				<label class="fix" for="address">Current Location<span>*</span>:</label> <input type="text" id="address" name="address" required><br>
+				
+				<label class="fix" for="tel">Phone Number<span>*</span>:</label> <input type="tel" name="phone" id="tel"
+								pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+								title="Must match the form ###-###-####"><br><br>	
+				
+				</fieldset>
+	
+		<fieldset>
+			<h2>Ice Cream Customizer</h2>
+				Flavor:<br>
+					<input type="radio" name="crust" value="chocolate">Chocolate<br>
+					<input type="radio" name="crust" value="vanilla">Vanilla<br>
+					<input type="radio" name="crust" value="strawberry">Strawberry<br><br>
+			Toppings:<br>
+					<input type="checkbox" name="topping1" value="Sprinkles">Sprinkles<br>
+					<input type="checkbox" name="topping2" value="Oreos">Oreos<br>
+					<input type="checkbox" name="topping3" value="chips">Chocolate Chips<br><br>
+			Syrup:<br>
+				<select name="syrup">
+					<option value="None">None</option>
+   					<option value="ChocolateSyrup">Chocolate</option>
+    				<option value="Carmel">Carmel</option>
+		</select><br><br><br>
+			
+			<input type="submit" name="submit" value="Submit" id="button">
+			<input type="reset" name="reset">
+		</form>
+		</fieldset>
+</body>
+</html>
